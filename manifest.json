@@ -9,7 +9,7 @@
 
   "version": "1.0",
   "icons": {
-    "48": "icon.png"
+    "48": "icons/48x48.png"
   },
 
   "background": {
@@ -20,7 +20,8 @@
   },
   
   "browser_action": {
-    "default_icon": "pin.png"
+    "default_icon": "icons/action.png",
+    "default_title": "Pin tab"
   },
   "commands": {
     "_execute_browser_action": {
