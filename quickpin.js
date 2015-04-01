@@ -5,24 +5,24 @@
     positions: [],
 
     init: function() {
-      return chrome.browserAction.onClicked.addListener(qp.toggle);
+      chrome.browserAction.onClicked.addListener(qp.onTrigger);
     },
 
-    toggle: function(tab) {
+    onTrigger: function(tab) {
       if(!tab.pinned) {
         qp.positions[tab.id] = tab.index;
       }
       
-      chrome.tabs.update(tab.id, {pinned: !tab.pinned}, qp.updated);
+      chrome.tabs.update(tab.id, {pinned: !tab.pinned}, qp.afterUpdate);
     },
 
-    updated: function(tab) {
+    afterUpdate: function(tab) {
       if(!tab.pinned && tab.id in qp.positions) {
-        chrome.tabs.move(tab.id, {index: qp.positions[tab.id]}, qp.moved);
+        chrome.tabs.move(tab.id, {index: qp.positions[tab.id]}, qp.afterMove);
       }
     },
 
-    moved: function(tab) {
+    afterMove: function(tab) {
       if(tab.id in qp.positions) {
         qp.positions = qp.positions.slice(tab.id, 1);
       }
