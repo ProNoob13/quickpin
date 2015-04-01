@@ -1,2 +1,2 @@
 # Quickpin
-A Chrome extension that lets you pin and unpin tabs using the click of a button and using a configurable hotkey. Made by @ProNoob13, concept by @opensoars.
+A Chrome extension that lets you pin and unpin tabs using the click of a button and using a configurable hotkey. Made by [ProNoob13](https://twitter.com/ProNoob13/), concept by [opensoars](https://github.com/opensoars/).
