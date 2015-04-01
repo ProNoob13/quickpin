@@ -1,6 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Quickpin",
+  "icons": {
+    "48": "icon.png"
+  },
   "description": "Allows pinning the current tab using either the extension button and/or a keyboard shortcut",
   "version": "1.0",
   "background": {
