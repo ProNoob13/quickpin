@@ -7,7 +7,7 @@
   "homepage_url": "https://github.com/ProNoob13/quickpin/",
   "description": "Allows pinning of the current tab using a single click on the button and/or a keyboard shortcut.",
 
-  "version": "1.0",
+  "version": "1.2",
   "icons": {
     "48": "icons/48x48.png"
   },
